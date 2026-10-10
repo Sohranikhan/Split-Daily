@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://familysplit.proaikit.com",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "858650084941-8kp6du6okds5mpbg91cjcd2847jknae1.apps.googleusercontent.com"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https://familysplit.proaikit.com",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "858650084941-8kp6du6okds5mpbg91cjcd2847jknae1.apps.googleusercontent.com"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

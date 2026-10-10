@@ -1,0 +1,38 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "types": [
+      "node",
+      "nativewind/types",
+      "expo/types"
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@shared/*": [
+        "./shared/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
+  ],
+  // The API server has its own tsconfig (server/tsconfig.json); its types still flow into
+  // the app through `import type { AppRouter }` in lib/trpc.ts.
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "dist",
+    "dist-web",
+    "server",
+    "drizzle",
+    "tests",
+    "drizzle.config.ts"
+  ]
+}

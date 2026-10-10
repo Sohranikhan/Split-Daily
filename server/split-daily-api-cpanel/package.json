@@ -1,0 +1,22 @@
+{
+  "name": "split-daily-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "app.cjs",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "start": "node app.cjs"
+  },
+  "dependencies": {
+    "@trpc/server": "11.7.2",
+    "drizzle-orm": "0.44.7",
+    "express": "4.22.3",
+    "jose": "6.2.12",
+    "pg": "8.23.1",
+    "superjson": "1.13.3",
+    "zod": "4.6.5"
+  }
+}

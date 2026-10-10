@@ -1,0 +1,13 @@
+{
+  // Standalone settings for code shared by the app and the API server, so tools that
+  // look up the nearest tsconfig (esbuild, vitest) don't depend on the Expo base config.
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["**/*.ts"]
+}
